@@ -9,7 +9,7 @@ NC='\e[0m'
 #intro
 printf "${biru}	
 			           Newscat APPS BOT ${ijo}
-        Code By : www.wanjas.com | facebook.com/ihsan.aryan | tambangakun@gmail.com ${merah}
+        Code By : www.wanjas.com | facebook.com | @gmail.com ${merah}
 	                Agar Success Silahkan Hubungi Kontak Diatas 
 "
 printf "${kuning}	___________________________________________________________________________${NC}\n\n"
@@ -20,13 +20,13 @@ printf "${kuning}[!]${NC} Insert Your Newscat Token: ";read token
 echo "$token"  >> token.reg
 fi
 ctoken=$(cat token.reg)
-regtoken=$(curl -s  https://github.com/lapakdigital/newscatbot/blob/master/reg | grep -o "$ctoken" )
+regtoken=$(curl -s  https://github.com/4R1928/bidadaripenyelamat/reg | grep -o "$ctoken" )
 if [[ $regtoken == "$ctoken" ]]
 	then
 		printf "${ijo}[!]${NC} Token Registered To BOT Server\n" 
 else
 	printf "${merah}[!]${NC} Please Regster Your Token\n"
-	printf "${kuning}[!]${NC} Contact : tambangakun@gmail.com | facebook.com/ihsan.aryan\n"
+	printf "${kuning}[!]${NC} Contact : @gmail.com | facebook.com\n"
 	exit
 fi
 #token='5f52799c29f136364557effbe4cbf40e'
@@ -69,7 +69,7 @@ if [[ $getmessage == 'OK' ]]
 	then
 		printf "${ijo}[!]${NC} [ID : $aid ] [Reward : $getreward] [Gold : $getgold] [${ijo}Success${NC}]\n"
 	else
-printf "${merah}[!]${NC} [ID : $aid ] [Reward : 0] [Silahkan Hubungi Kontak Diatas | www.wanjas.com] [${merah}Failed${NC}]\n"
+printf "${merah}[!]${NC} [ID : $aid ] [Reward : 0] [Silahkan Hubungi Kontak Diatas | emon ] [${merah}Failed${NC}]\n"
 fi
 }
 for aid in $(cat aid.txt)
